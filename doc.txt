@@ -1,0 +1,12 @@
+Hier ein neuies Projekt E-comm-en nach einem Tutorial 
+---> https://www.youtube.com/watch?v=JHjOXkrAowc&list=PL8p2I9GklV47EWeJZlC-_dgj7kdBWYd56&index=4
+--> Bei diesem Projekt wird login umd master page selbst gemacht. D.h. beim install von dem Projekt 
+--> wird nur das Projekt per composer installiert und sonst nicht.
+--> Beim Erstallen des master pages wird bootstrap unf js in das page integriert.
+--> Die Migrations werden gelöscht und dann nach und nach erstellt manuell.
+--> Danach wird seeder erstellt mit.. php artisan make:seeder UserSeeder
+--> In dieser Seeder Datei UserSeeder wird noch use Illuminate\Support\Facades\DB; use Illuminate\Support\Facades\Hash; auch eingegeben.
+--> Es werden einige user erstellt mit Hilfe von dieser Seeder Klasse
+--> Daten in UserSeeder eintragen dann den Befehl php artisan db:seed --class Userseeder im Terminal geben.
+--> So dann wird ein UserController erstellt und eine Funktion login, damit man sich einloggen kann.
+--> Dann braucht man aber ein Middleware um das einloggen zu vervolständigen
